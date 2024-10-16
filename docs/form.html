@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css"> <!-- Memuat file CSS -->
+    <title>Form Data Diri</title>
+</head>
+<body>
+    <h1>Form Data Diri Mahasiswa</h1>
+    
+    <form action="gif-page.html" method="get">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+        
+        <label for="jurusan">Jurusan:</label>
+        <input type="text" id="jurusan" name="jurusan" required>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <audio id="background-audio" autoplay loop muted>
+        <source src="audio 2.mp3" type="audio/mpeg"> <!-- Ganti dengan format yang benar -->
+        
+    </audio>
+
+    <script>
+        const audio = document.getElementById('background-audio');
+        
+        // Menghilangkan mute saat halaman dimuat
+        window.onload = () => {
+            audio.muted = false; // Unmute saat halaman dimuat
+            audio.play();
+        };
+    </script>
+</body>
+</html>

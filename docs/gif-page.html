@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gif-style.css">
+    <title>Hore Selamat!</title>
+</head>
+<body>
+    <div class="gif-container">
+        <img src="giphy gif OH.webp" alt="Celebration GIF">
+    </div>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="audio 3.mp3" type="audio/mpeg"> <!-- Pastikan format file audio yang benar -->
+        
+    </audio>
+
+    <script>
+        const audio = document.getElementById('background-audio');
+        
+        // Menghilangkan mute saat halaman dimuat
+        window.onload = () => {
+            audio.muted = false; // Unmute saat halaman dimuat
+        };
+    </script>
+</body>
+</html>
